@@ -22,17 +22,19 @@ class _SignUpScreenState extends State<SignUpScreen> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16.0),
-      child: Form(
-        key: formKey,
-        child: Column(
-          children: [
-            renderName(),
-            renderEmail(),
-            renderNickName(),
-            renderPhoneNumber(),
-            renderBirthDay(),
-            renderButton(),
-          ],
+      child: SingleChildScrollView(
+        child: Form(
+          key: formKey,
+          child: Column(
+            children: [
+              renderName(),
+              renderEmail(),
+              renderNickName(),
+              renderPhoneNumber(),
+              renderBirthDay(),
+              renderButton(),
+            ],
+          ),
         ),
       ),
     );
